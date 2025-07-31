@@ -6,6 +6,6 @@ class Doller {
 		this.amount = amount;
 	}
 	void times(int multiplier){
-		amount *= multiprier;
+		return new Doller(amount * multiplier);
 	}
 }

@@ -1,7 +1,7 @@
 package money;
 
 class Doller {
-	int amount;
+	private int amount;
 	Doller(int amount){
 		this.amount = amount;
 	}

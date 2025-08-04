@@ -21,9 +21,9 @@ class Money {
 		return amount + " " + currency;
 	}
 	static Money doller(int amount){
-		return new Doller(amount, "USD");
+		return new Money(amount, "USD");
 	}
 	static Money franc(int amount){
-		return new Franc(amount, "CHF");
+		return new Money(amount, "CHF");
 	}
 }

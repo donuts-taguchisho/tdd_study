@@ -1,9 +1,12 @@
+class TestCase:
+    pass
+
 test = WasRun("testMethod")
 print(test.wasRun)
 test.run()
 print(test.wasRun)
 
-class WasRun:
+class WasRun(TestCase):
     def __init__(self, name):
         self.wasRun = None
         self.name = name

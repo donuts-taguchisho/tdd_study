@@ -4,4 +4,5 @@ test.testMethod()
 print(test.wasRun)
 
 class WasRun:
-    pass
+    def __init__(self, name):
+        pass

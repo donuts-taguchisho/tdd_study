@@ -7,9 +7,7 @@ class TestCase:
         self.setUp()
         method = getattr(self, self.name)
         method()
-        self.tearDown()
-    def tearDown(self):
-        pass
+
 class WasRun(TestCase):
     def setUp(self):
         self.wasRun = None
@@ -24,7 +22,6 @@ class TestCaseTest(TestCase):
         self.test.run()
         assert self.test.wasRun
     def testSetUp(self):
-        self.test = WasRun("testMethod")
         self.test.run()
         assert self.test.wasSetUp
 

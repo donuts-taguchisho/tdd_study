@@ -13,6 +13,8 @@ class WasRun(TestCase):
         self.log = "setUp "
     def testMethod(self):
         self.log = self.log + "testMethod "
+    def tearDown(self):
+        self.log = self.log + "tearDown "
 
 class TestCaseTest(TestCase):
     def testTemplateMethod(self):
